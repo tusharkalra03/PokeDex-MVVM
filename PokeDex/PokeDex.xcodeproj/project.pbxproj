@@ -18,7 +18,6 @@
 		D3442C1F2666818400DE79C4 /* PokeDexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3442C1E2666818400DE79C4 /* PokeDexViewModel.swift */; };
 		D3442C222666891300DE79C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D3442C212666891300DE79C4 /* Kingfisher */; };
 		D34E0D81266656CF00A2345C /* ExpandedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E0D80266656CF00A2345C /* ExpandedCardView.swift */; };
-		D3F45BBE2667C0B9003CFFEF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F45BBD2667C0B9003CFFEF /* SearchView.swift */; };
 		D3F45BC02667DAEE003CFFEF /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F45BBF2667DAEE003CFFEF /* StatsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		D340EC162668C6D5000B54D8 /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
 		D3442C1E2666818400DE79C4 /* PokeDexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexViewModel.swift; sourceTree = "<group>"; };
 		D34E0D80266656CF00A2345C /* ExpandedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedCardView.swift; sourceTree = "<group>"; };
-		D3F45BBD2667C0B9003CFFEF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		D3F45BBF2667DAEE003CFFEF /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,11 +68,11 @@
 		D3392ED026662CBB00B501B2 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				D3392ED126662CBB00B501B2 /* PokeDexApp.swift */,
+				D3392ED326662CBB00B501B2 /* ContentView.swift */,
 				D3392EE32666301D00B501B2 /* Models */,
 				D3392EE026662CC400B501B2 /* Views */,
 				D3392EE826663F4D00B501B2 /* ViewModels */,
-				D3392ED126662CBB00B501B2 /* PokeDexApp.swift */,
-				D3392ED326662CBB00B501B2 /* ContentView.swift */,
 				D3392ED526662CBB00B501B2 /* Assets.xcassets */,
 				D3392EDA26662CBB00B501B2 /* Info.plist */,
 				D3392ED726662CBB00B501B2 /* Preview Content */,
@@ -96,7 +94,6 @@
 				D3392EE126662CE100B501B2 /* PokemonCardView.swift */,
 				D3392EE62666390300B501B2 /* PokeDexView.swift */,
 				D34E0D80266656CF00A2345C /* ExpandedCardView.swift */,
-				D3F45BBD2667C0B9003CFFEF /* SearchView.swift */,
 				D3F45BBF2667DAEE003CFFEF /* StatsView.swift */,
 				D340EC162668C6D5000B54D8 /* FilterButtonView.swift */,
 			);
@@ -198,7 +195,6 @@
 				D3392EE52666303100B501B2 /* Pokemon.swift in Sources */,
 				D3392ED226662CBB00B501B2 /* PokeDexApp.swift in Sources */,
 				D3392EE72666390300B501B2 /* PokeDexView.swift in Sources */,
-				D3F45BBE2667C0B9003CFFEF /* SearchView.swift in Sources */,
 				D3392EE226662CE100B501B2 /* PokemonCardView.swift in Sources */,
 				D340EC172668C6D6000B54D8 /* FilterButtonView.swift in Sources */,
 				D34E0D81266656CF00A2345C /* ExpandedCardView.swift in Sources */,

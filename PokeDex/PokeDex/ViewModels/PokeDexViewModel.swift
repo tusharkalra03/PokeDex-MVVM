@@ -27,7 +27,7 @@ class PokeDexViewModel: ObservableObject {
         return nil
     }
     
-    func fetch(){
+    private func fetch(){
         
         guard let url = URL(string: baseURL) else {return}
         
@@ -36,8 +36,8 @@ class PokeDexViewModel: ObservableObject {
             guard let data = data?.parseData(removeString: "null,") else {return}
             
             guard let pokemons = try? JSONDecoder().decode([Pokemon].self, from: data) else {
-                print("No")
-                return}
+                fatalError("Problem decoding data")
+            }
             
             DispatchQueue.main.async {
                 self.pokemons = pokemons
@@ -45,7 +45,12 @@ class PokeDexViewModel: ObservableObject {
         }.resume()
     }
     
-    func shuffle() -> [Pokemon]{
+    @discardableResult
+    func shuffle(forFilter: Bool) -> [Pokemon]{
+        if forFilter{
+            filteredPokemon = filteredPokemon.shuffled()
+            return filteredPokemon
+        }
         pokemons = pokemons.shuffled()
         return pokemons
     }
