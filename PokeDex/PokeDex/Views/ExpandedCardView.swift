@@ -9,6 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct ExpandedCardView: View {
+    
     //MARK: - Variables
     @Namespace var expandTransition
     @Namespace var evolutionTransition
@@ -150,11 +151,12 @@ struct EvolutionView: View {
                     Text("Not available")
                 }
             }
-            .frame(width: 360)
+            .frame(width: 340)
             .cornerRadius(20)
             .padding(.vertical)
             .padding(.horizontal, 8)
             .background(Color.white.opacity(0.5))
+            .cornerRadius(10)
             .shadow(color: .white, radius: 30)
             .matchedGeometryEffect(id: "pokemonEvolution", in: evolutionTransition)
             .onAppear(perform: {
